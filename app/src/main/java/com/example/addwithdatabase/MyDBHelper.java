@@ -43,7 +43,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery("SELECT id, Name, Description FROM Person", null);
         while (cursor.moveToNext()) {
             Person p = new Person();
-            p.id = cursor.getInt(0); // Fixed typo here
+            p.Id = cursor.getInt(0); // Fixed typo here
             p.Name = cursor.getString(1);
             p.Description = cursor.getString(2);
             list.add(p);

@@ -39,7 +39,7 @@ public class myActivity extends Activity {
     list = dbHelper.getPerson();
     txtResult.setText("");
         for (Person p:list) {
-            txtResult.setText(txtResult.getText().toString()+"\n"+p.id);
+            txtResult.setText(txtResult.getText().toString()+"\n"+p.Id);
         }
     }
 }
